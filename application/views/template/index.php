@@ -32,7 +32,7 @@
                 <?php echo $content; ?>
             </div>
             <div class="fixed-action-btn horizontal" style="bottom: 10px; right: 10px;">
-                <a class="btn-floating btn-large red"><i class="large material-icons">settings</i></a>
+                <a class="btn-floating btn-large red"><i class="large material-icons">navigation</i></a>
                 <ul>
                     <li><div id='top'><a class="btn-floating blue"><i class="material-icons">keyboard_arrow_up</i></a></div></li>
                     <li><a class="btn-floating yellow" onClick="history.go(-1);"><i class="material-icons">arrow_back</i></a></li>
