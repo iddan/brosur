@@ -1,0 +1,59 @@
+Log ...
+	- menghilangkan index.php dengan .htaccess
+	- membuat template view menggunakan core MY_Controller.php untuk semua tampilan 
+	- sistem login DONE ..
+	- modules categori DONE ..
+	- modules products ..
+		- upload gambar DONE ..
+		- delete with unlink image in assets product DONE ..
+		- edit product with update image / not update image .. DONE ..
+	-modules user CRUD with validasi DONE ..
+		- otomatis tidak bisa login pada expire_date DONE.
+	- tambah 1 groups VIP .DONE !!
+	- MODULE CATEGORY FIX TEMPLATE MODULE !!!!!!!!
+	- MODULE USER FIX !!!!!!
+	- menambahkan Saving Session Data to a Database DONE!
+	- module product RE FIX ..	
+		- multi upload image untuk produk max. 5 images (images boleh sama tetapi filename pasti beda). DONE !!
+		- delete product sukses dengan unlink images nya / images ikut terhapus .. DONE !
+		- edit product .. DONE!
+	- module category
+		-tambahkan category_level 0 = level parent, 1 = level1, 2 = level2 (pada add product harus memilih category dari level2) DONE !!
+	- add tinyMCE from all text area .
+	- template sudah di bereskan ..
+	- membereskan module main ..
+	- upload ke hosting 20151001 (solution14.pe.hu/brosur)
+	- module login
+		- tidak dapat login secara bersamaan dengan akun yang sama ..(alternative login dengan get imei) DONE !!!
+	- salah melogika kan encrypting password
+		- encrypt kan password dengan $decrypt saja , tidak dengan $user_name . SOLVED !!!
+
+In Proses ...		
+	- module product RE FIX ..
+		- index (view images) images tidak menyesuaikan / terlalu besar .(sudah bisa upload dengan resize,  NOT SOLVED !) .
+		
+	- VIEW for member buatkan seperti aplikasi GOJEK (tampilan sesudah sukses login langsung terdiri dari icon2 parent category yang bila di dipilih akan muncul sub-category / product yang dipilih) DONE!! (percantik lagi DONE) !!!
+
+	- buatkan module pengaturan akun
+	- tambahkan panel info di footer	
+
+TESTING ..
+	- Module Product
+		- add product tanpa upload images. OK !
+		- add product dengan upload 1 images. OK!
+		- add product dengan upload 2 images. OK!
+		- add product dari chrome android. OK!
+		- edit product . OK!
+
+INFO !!
+- level user
+	1 = Admin
+	2 = VIP
+	3 = Member
+- level category
+	0 = level parent
+	1 = level 1 
+	2 = level 2 (pada level category ini add product harus memilih category product)
+- login 
+	0 = not login / not online
+	1 = is login / online
