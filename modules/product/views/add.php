@@ -43,18 +43,14 @@
                         <input type="file" name="images[]" id="images" multiple>
                     </div>
                     <div class="file-path-wrapper">
-                        <input type="text" placeholder="Upload one or more image (.gif, .jpg, .jpeg, .png) Max 1 Mb" class="file-path validate">
+                        <input type="text" placeholder="" class="file-path validate">
                     </div>
                 </div>
-                <!-- <div class="input-field">
-                    <input type="file" name="images[]" id="images" multiple>
-                    <span>*Image (gif, jpg, jpeg, png) | Max 1 Mb | Max Upload 5 Images</span>
-                </div> -->
+                <label for="upload_images">* Upload one or more Image (.gif | .jpg | .jpeg | .png)<br> * Max 1 Mb<br> * Max Upload 5 Images</label>
             </div>
             <div class="row">
                 <div class="input-field">
-                    <input type="submit" value="Save" class="btn">
-                    <a class="waves-effect waves-light btn" onClick="history.go(-1);">Back</a>
+                    <input type="submit" value="Save" class="btn light-blue">
                 </div>    
             </div>
         </form>

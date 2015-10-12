@@ -1,5 +1,5 @@
 <?php echo $this->session->flashdata('message'); ?>
-<a href="add" class="waves-effect waves-light btn">Add Product</a>
+<a href="add" class="waves-effect waves-light btn light-blue">Add Product</a>
 <p class="flow-text">* Click "<b>Product</b>" for details</p>
 <table class="hoverable" id="table">
     <thead>
@@ -29,11 +29,13 @@
     foreach($data->result() AS $product) {
 ?>
 <div id="<?php echo $product->product_id; ?>" class="modal">
-    <div class="modal-content">        
+    <div class="modal-content">
         <p class="flow-text">
-            <b><?php echo $product->product_name; ?></b><br>
-            Category Product : <?php echo $product->category_name; ?><br>
-            <?php echo $product->description; ?><br>            
+            <b>Detail Product</b><hr>
+            Category : <?php echo $product->category_name; ?><hr>
+            Product Name : <?php echo $product->product_name; ?><hr>
+            Price : Rp. <?php echo number_format( $product->price, 0 , '' , '.' ); ?>,-<hr>
+            <?php echo $product->description; ?><hr>
         </p>
         <div class="center">
             <a href="images/<?php echo $product->product_id; ?>" class="waves-effect waves-light btn light-blue">View Images</a><br><br>
@@ -42,7 +44,7 @@
         </div>
     </div>
     <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        <a href="#!" class=" modal-action modal-close waves-effect btn-flat">Close</a>
     </div>
 </div>
 <?php

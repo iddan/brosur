@@ -7,13 +7,13 @@
     	<h5 class="center-align">Management e-Brosur</h5>
   	</div>
 	<div class="col s4">
-		<a href="<?php echo base_url('user/index'); ?>"><i class="large material-icons">account_box</i><br>User</a>
+		<a href="<?php echo base_url('user/index'); ?>"><i class="large material-icons">account_box</i><br>Users</a>
 	</div>
 	<div class="col s4">
-		<a href="<?php echo base_url('product/index'); ?>"><i class="large material-icons">menu</i><br>Products</a>
+		<a href="<?php echo base_url('product/index'); ?>"><i class="large material-icons">devices</i><br>Products</a>
 	</div>
 	<div class="col s4">
-		<a href="<?php echo base_url('category/index'); ?>"><i class="large material-icons">menu</i><br>Categories</a>
+		<a href="<?php echo base_url('category/index'); ?>"><i class="large material-icons">assignment_turned_in</i><br>Categories</a>
 	</div>
 </div>
 <!-- <?php

@@ -1,17 +1,17 @@
-<!-- <?php 
-        foreach($data->result_array() AS $detail) {
-            $image_filename = $detail['image_filename'];
-            if(!$image_filename) {
-                echo '<img class="responsive-img" src="'.base_url().'assets/images/no-image.jpg">';
-            } else {
-                $split = explode("|", $image_filename);
-                for($i=0; $i<count($split); $i++) {
-                    echo '<img class="responsive-img materialboxed" src="'.base_url().'assets/images/products/'.$split[$i].'">';
-                }
+<?php 
+    foreach($data->result_array() AS $detail) {
+        $image_filename = $detail['image_filename'];
+        if(!$image_filename) {
+            echo '<img class="responsive-img" data-caption="No Images" src="'.base_url().'assets/images/no-image.jpg">';
+        } else {
+            $split = explode("|", $image_filename);
+            for($i=0; $i<count($split); $i++) {
+                echo '<img class="responsive-img materialboxed" data-caption="'.$split[$i].'" src="'.base_url().'assets/images/products/'.$split[$i].'">';
             }
         }
-    ?> -->
-<div class="slider">
+    }
+?>
+<!-- <div class="slider">
     <ul class="slides">
     <?php 
         foreach($data->result_array() AS $detail) {
@@ -31,5 +31,4 @@
         }
     ?>
     </ul>
-</div>
-<a class="waves-effect waves-light btn" onClick="history.go(-1);">Back</a>
+</div> -->

@@ -27,18 +27,22 @@ Log ...
 		- tidak dapat login secara bersamaan dengan akun yang sama ..(alternative login dengan get imei) DONE !!!
 	- salah melogika kan encrypting password
 		- encrypt kan password dengan $decrypt saja , tidak dengan $user_name . SOLVED !!!
-	- module user (desain ulang index) DONE !!
+	- VIEW for member buatkan seperti aplikasi GOJEK (tampilan sesudah sukses login langsung terdiri dari icon2 parent category yang bila di dipilih akan muncul sub-category / product yang dipilih) DONE!! (percantik lagi DONE) !!!
 
 In Proses ...		
 	- module product RE FIX ..
-		- index (view images) images tidak menyesuaikan / terlalu besar .(sudah bisa upload dengan resize,  NOT SOLVED !) .
-		
-	- VIEW for member buatkan seperti aplikasi GOJEK (tampilan sesudah sukses login langsung terdiri dari icon2 parent category yang bila di dipilih akan muncul sub-category / product yang dipilih) DONE!! (percantik lagi DONE) !!!
+		- index (view images) images tidak menyesuaikan / terlalu besar .(sudah bisa upload dengan resize,  NOT SOLVED !) .	
 
-	- module product (desain ulang index) 
+	CHECK AGAIN {
+		- module user (desain ulang)
+		- module product (desain ulang) 
+		- module category (desain ulang) 
+	}
 
 	- buatkan module pengaturan akun
-	- tambahkan panel info di footer	
+	- tambahkan panel info di footer
+
+	* SESUDAH NGODING USAHAKAN LANGSUNG PUSH KE GIT-REPOSITORY(UPLOAD KE GITHUB)
 
 TESTING ..
 	- Module Product

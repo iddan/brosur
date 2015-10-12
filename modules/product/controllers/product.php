@@ -10,7 +10,7 @@ class Product extends AdminController {
 
     public function index() {
         $data = array(
-            'title' => 'Product',
+            'title' => 'Products',
             'data' => $this->product_model->get()
         );
         $this->render_page('index', $data);

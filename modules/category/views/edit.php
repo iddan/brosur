@@ -68,8 +68,7 @@
             </div>
             <div class="row">
                 <div class="input-field">
-                    <input type="submit" value="Update" class="btn">
-                    <a class="waves-effect waves-light btn" onClick="history.go(-1);">Back</a>
+                    <input type="submit" value="Update" class="btn light-blue">
                 </div>    
             </div>
         </form>

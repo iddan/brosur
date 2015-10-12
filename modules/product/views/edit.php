@@ -40,18 +40,19 @@
                     <label for="description">Description</label>
                 </div>
             </div>
-            <div class="row">
+            <div class="row">                
                 <?php                    
                     $image_filename = $data['image_filename'];
                     if($image_filename == '') {
-                        echo '<img class="materialboxed responsive-img" data-caption="No Images" width="100" src="'.base_url().'assets/images/no-image.jpg">';
+                        echo '<img class="responsive-img" data-caption="No Images" width="100" src="'.base_url().'assets/images/no-image.jpg">';
                     } else {
                         $split = explode("|", $image_filename);
                         for($i=0; $i< count($split); $i++) {
-                            echo '<img class="materialboxed responsive-img" data-caption="'.$split[$i].'" width="100" src="'.base_url().'assets/images/products/'.$split[$i].'">';
+                            echo '<div class="col s6 m2"><img class="responsive-img materialboxed" data-caption="'.$split[$i].'" width="100" src="'.base_url().'assets/images/products/'.$split[$i].'"></div>';
                         }
                     }
                 ?>
+                <label for="current_images">Current Images</label>
             </div>
             <div class="row">
                 <div class="file-field input-field">
@@ -60,14 +61,14 @@
                         <input type="file" name="images[]" id="images" multiple>
                     </div>
                     <div class="file-path-wrapper">
-                        <input type="text" placeholder="Upload one or more image (.gif, .jpg, .jpeg, .png) Max 1 Mb" class="file-path validate">
-                    </div>
+                        <input type="text" placeholder="" class="file-path validate">
+                    </div>                    
                 </div>
+                <label for="upload_images">* Upload one or more Image (.gif | .jpg | .jpeg | .png)<br> * Max 1 Mb<br> * Max Upload 5 Images</label>
             </div>
             <div class="row">
                 <div class="input-field">
-                    <input type="submit" value="Update" class="btn">
-                    <a class="waves-effect waves-light btn" onClick="history.go(-1);">Back</a>
+                    <input type="submit" value="Update" class="btn light-blue">
                 </div>    
             </div>
         </form>

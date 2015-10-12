@@ -10,7 +10,7 @@ class Category extends AdminController {
 
     public function index() {
         $data = array(
-            'title' => 'Category',
+            'title' => 'Categories',
             'data' => $this->category_model->get()
         );
         $this->render_page('index', $data);

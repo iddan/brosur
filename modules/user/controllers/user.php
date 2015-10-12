@@ -10,7 +10,7 @@ class User extends AdminController {
 
     public function index() {
         $data = array(
-            'title' => 'User',
+            'title' => 'Users',
             'user_online' => $this->user_model->check('login', 1)->num_rows(),
             'data' => $this->user_model->get()            
         );
