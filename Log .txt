@@ -28,17 +28,26 @@ Log ...
 	- salah melogika kan encrypting password
 		- encrypt kan password dengan $decrypt saja , tidak dengan $user_name . SOLVED !!!
 	- VIEW for member buatkan seperti aplikasi GOJEK (tampilan sesudah sukses login langsung terdiri dari icon2 parent category yang bila di dipilih akan muncul sub-category / product yang dipilih) DONE!! (percantik lagi DONE) !!!
-
-In Proses ...		
-	- module product RE FIX ..
-		- index (view images) images tidak menyesuaikan / terlalu besar .(sudah bisa upload dengan resize,  NOT SOLVED !) .	
-
-	CHECK AGAIN {
+	-CHECK AGAIN VIEW {
 		- module user (desain ulang)
+			- index OK!
+			- detail OK!
+			- form add OK!
+			- form edit OK!
 		- module product (desain ulang) 
+			- index OK!
+			- detail OK!
+			- form add OK!
+			- form edit OK!
+			- view images OK!
 		- module category (desain ulang) 
+			- index OK!
+			- detail OK!
+			- form add OK!
+			- form edit OK!
 	}
 
+In Proses ...
 	- buatkan module pengaturan akun
 	- tambahkan panel info di footer
 
@@ -50,12 +59,7 @@ In Proses ...
 	$ git status
 
 TESTING ..
-	- Module Product
-		- add product tanpa upload images. OK !
-		- add product dengan upload 1 images. OK!
-		- add product dengan upload 2 images. OK!
-		- add product dari chrome android. OK!
-		- edit product . OK!
+	- 
 
 INFO !!
 - level user

@@ -40,7 +40,8 @@
                     <label for="description">Description</label>
                 </div>
             </div>
-            <div class="row">                
+            <div class="row">
+                <label for="current_images">Current Images</label><br>
                 <?php                    
                     $image_filename = $data['image_filename'];
                     if($image_filename == '') {
@@ -51,8 +52,7 @@
                             echo '<div class="col s6 m2"><img class="responsive-img materialboxed" data-caption="'.$split[$i].'" width="100" src="'.base_url().'assets/images/products/'.$split[$i].'"></div>';
                         }
                     }
-                ?>
-                <label for="current_images">Current Images</label>
+                ?>                
             </div>
             <div class="row">
                 <div class="file-field input-field">

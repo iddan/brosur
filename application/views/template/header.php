@@ -12,7 +12,7 @@
                         <li><a href="<?php echo base_url('main/logout'); ?>" class="waves-effect waves-light">Logout</a></li>
                     </ul>
                         <ul id="dropdown1" class="dropdown-content">
-                            <li><a href="<?php echo base_url('user/index'); ?>">User</a></li>
+                            <li><a href="<?php echo base_url('user/index'); ?>">Users</a></li>
                             <li><a href="<?php echo base_url('product/index'); ?>">Products</a></li>
                             <li><a href="<?php echo base_url('category/index'); ?>">Categories</a></li>
                         </ul>
@@ -30,7 +30,7 @@
                             <li><a class="collapsible-header waves-effect waves-light">Management<i class="material-icons right">arrow_drop_down</i></a>
                                 <div style="display: none;" class="collapsible-body">
                                     <ul>
-                                        <li><a href="<?php echo base_url('user/index'); ?>">User</a></li>
+                                        <li><a href="<?php echo base_url('user/index'); ?>">Users</a></li>
                                         <li><a href="<?php echo base_url('product/index'); ?>">Products</a></li>
                                         <li><a href="<?php echo base_url('category/index'); ?>">Categories</a></li>
                                     </ul>

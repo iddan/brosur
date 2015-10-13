@@ -4,7 +4,7 @@
     <a href="<?php echo base_url('user/user_online'); ?>" class="collection-item">User Online<span class="badge"><?php echo $user_online; ?></span></a>
 </div>
 <p class="flow-text">* Click "<b>Username</b>" for details</p>
-<table class="hoverable" id="table">
+<table class="z-depth-2" id="table">
     <thead>
         <tr>
             <th>No.</th>
@@ -74,28 +74,28 @@
             $group = 'Admin';
             $status = '<span class="green-text">Active</span>';
             $expire_date = '-';
-        }        
+        }
 ?>
-<div id="<?php echo $user->user_id; ?>" class="modal">
-    <div class="modal-content">
-        <p class="flow-text">
-            <b>Detail User</b><hr>
-            Group : <?php echo $group; ?><hr>
-            User Name : <?php echo $user->user_name; ?><hr>
-            Email : <?php echo $user->email; ?><hr>
-            Real Name : <?php echo $user->real_name; ?><hr>
-            Status : <?php echo $status; ?><hr>
-            Expire Date : <?php echo $expire_date; ?><hr>
-        </p>
-        <div class="center">
-            <a href="edit/<?php echo $user->user_id; ?>" class="waves-effect waves-light btn light-blue"><i class="material-icons">edit</i></a>
-            <a href="delete/<?php echo $user->user_id; ?>" class="waves-effect waves-light btn light-blue" onclick="return confirmDelete();"><i class="material-icons">delete</i></a>
+        <div id="<?php echo $user->user_id; ?>" class="modal">
+            <div class="modal-content">
+                <p class="flow-text">
+                    <b>Detail User</b><br>
+                    Group : <?php echo $group; ?><br>
+                    User Name : <?php echo $user->user_name; ?><br>
+                    Email : <?php echo $user->email; ?><br>
+                    Real Name : <?php echo $user->real_name; ?><br>
+                    Status : <?php echo $status; ?><br>
+                    Expire Date : <?php echo $expire_date; ?><br>
+                </p>
+                <div class="center">
+                    <a href="edit/<?php echo $user->user_id; ?>" class="waves-effect waves-light btn light-blue"><i class="material-icons">edit</i></a>
+                    <a href="delete/<?php echo $user->user_id; ?>" class="waves-effect waves-light btn light-blue" onclick="return confirmDelete();"><i class="material-icons">delete</i></a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
+            </div>
         </div>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a>
-    </div>
-</div>
 <?php
     }
 ?>
