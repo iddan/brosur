@@ -43,6 +43,11 @@ In Proses ...
 	- tambahkan panel info di footer
 
 	* SESUDAH NGODING USAHAKAN LANGSUNG PUSH KE GIT-REPOSITORY(UPLOAD KE GITHUB)
+	$ git status
+	$ git add *
+	$ git commit -m "penamaan commit" 
+	$ git push
+	$ git status
 
 TESTING ..
 	- Module Product

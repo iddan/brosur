@@ -1,4 +1,4 @@
 # eBrosur
-project eBrosur CV. Gemilang Jaya Elektronik
+Project eBrosur CV. Gemilang Jaya Elektronik
 
-Mencoba belajar menggunakan git hub
+By : iddan_gunawan@Solution14
