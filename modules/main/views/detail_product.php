@@ -5,7 +5,7 @@
 <?php
     foreach($data->result_array() AS $detail) {
 ?>
-        <div class="slider">
+        <!-- <div class="slider">
             <ul class="slides">
             <?php
                 $image_filename = $detail['image_filename'];
@@ -23,16 +23,16 @@
                 }
             ?>
             </ul>
-        </div>
+        </div> -->
         <div class="row">
             <?php
                 $image_filename = $detail['image_filename'];
                 if(!$image_filename) {
-                    echo '';
+                    echo '<img class="responsive-img" src="'.base_url().'assets/images/no-image.jpg">';
                 } else {
                     $split = explode("|", $image_filename);
                     for($i=0; $i<count($split); $i++) {
-                        echo '<div class="col s2">
+                        echo '<div class="col s6">
                             <img class="responsive-img materialboxed" data-caption="'.$split[$i].'" src="'.base_url().'assets/images/products/'.$split[$i].'">
                         </div>';
                     }
@@ -43,6 +43,3 @@
 <?php 
     }
 ?>
-<div class="center">
-    <a class="waves-effect waves-light btn light-blue" onClick="history.go(-1);">Back</a>
-</div>

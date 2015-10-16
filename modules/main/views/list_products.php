@@ -2,7 +2,7 @@
 <div class="col s12 center">
     <p class="flow-text"><h5><?php echo $title2; ?></h5></p>
 </div>
-<table class="hoverable" id="table">
+<table class="z-depth-2" id="table">
     <thead>
         <tr>
             <th>No.</th>
@@ -24,7 +24,3 @@
 ?>        
     </tbody>
 </table>
-<br>
-<div class="center">
-    <a class="waves-effect waves-light btn light-blue" onClick="history.go(-1);">Back</a>
-</div>

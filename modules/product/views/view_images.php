@@ -3,7 +3,7 @@
         echo '<b>'.$detail['product_name'].'</b>';
         $image_filename = $detail['image_filename'];
         if(!$image_filename) {
-            echo '<img class="responsive-img" data-caption="No Images" src="'.base_url().'assets/images/no-image.jpg">';
+            echo '<img class="responsive-img" src="'.base_url().'assets/images/no-image.jpg">';
         } else {
             $split = explode("|", $image_filename);
             for($i=0; $i<count($split); $i++) {

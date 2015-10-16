@@ -22,7 +22,7 @@
                     <ul class="side-nav" id="mobile">
                         <li class="center">
                             <img src="<?php echo base_url(); ?>assets/images/user.png">
-                            <a href="<?php echo base_url('set_account/index/'.$this->session->userdata('user_id')); ?>" class="waves-effect waves-light"><?php echo $this->session->userdata('real_name'); ?></a>
+                            <a><?php echo $this->session->userdata('real_name'); ?></a>
                         </li>
                         <div class="divider"></div>
                         <li><a href="<?php echo base_url('dashboard/index'); ?>" class="waves-effect waves-light">Dashboard</a></li>
@@ -44,8 +44,7 @@
                     <a href="" class="hide-on-small-only brand-logo left"><img src="<?php echo base_url(); ?>assets/images/logo.png" width="48"></a>
                     <ul class="hide-on-med-and-down right">
                         <li><a href="<?php echo base_url('main/index'); ?>" class="waves-effect waves-light">Home</a></li>
-                        <li><a class="waves-effect waves-light"><?php echo $this->session->userdata('real_name'); ?></a></li>
-                        <li><a class="dropdown-button waves-effect waves-light" href="#!" data-activates="dropdown2"><i class="material-icons">perm_identity arrow_drop_down</i></a></li>
+                        <li><a class="dropdown-button waves-effect waves-light" href="#!" data-activates="dropdown2"><?php echo $this->session->userdata('real_name'); ?><i class="material-icons right">arrow_drop_down</i></a></li>                        
                     </ul>
                         <ul id="dropdown2" class="dropdown-content">
                             <li><a href="<?php echo base_url('set_account/index/'.$this->session->userdata('user_id')); ?>">Setting</a></li>
@@ -57,10 +56,11 @@
                     <ul class="side-nav" id="mobile">
                         <li class="center">
                             <img src="<?php echo base_url(); ?>assets/images/user.png">
-                            <a href="<?php echo base_url('set_account/index/'.$this->session->userdata('user_id')); ?>" class="waves-effect waves-light"><?php echo $this->session->userdata('real_name'); ?></a>
+                            <a><?php echo $this->session->userdata('real_name'); ?></a>
                         </li>
                         <div class="divider"></div>
                         <li><a href="<?php echo base_url('main/index'); ?>" class="waves-effect waves-light">Home</a></li>
+                        <li><a href="<?php echo base_url('set_account/index/'.$this->session->userdata('user_id')); ?>">Setting</a></li>
                         <li><a href="<?php echo base_url('main/logout'); ?>" class="waves-effect waves-light">Logout</a></li>
                     </ul>
             	<?php } ?>

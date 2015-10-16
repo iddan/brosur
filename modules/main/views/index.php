@@ -12,12 +12,9 @@
                 </div>';
             }
         } else {
-            echo '<div class="card-panel"><span class="red-text">DATA NOT FOUND !!!</span></div>';
+            echo '<div class="card-panel"><span class="red-text">Data Not Found !</span></div>';
         }
     ?>
-</div>
-<div class="center">
-    <a class="waves-effect waves-light btn light-blue" onClick="history.go(-1);">Back</a>
 </div>
 <!-- <?php
     echo "<pre>";

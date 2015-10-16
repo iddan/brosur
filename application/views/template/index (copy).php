@@ -15,11 +15,12 @@
         <style type="text/css">
             #loading {
                 position: fixed;
-                left: 40%;
-                top: 40%;
+                left: 0px;
+                top: 0px;
                 width: 100%;
                 height: 100%;
-                background: no-repeat;
+                z-index: 9999;
+                background: url('<?php echo base_url(); ?>assets/images/loading.gif') 50% 50% no-repeat #fff;
             }
         </style>
     </head>
@@ -27,21 +28,7 @@
         <?php echo $header; ?>
         <main>
             <div class="container">
-                <div id="loading">
-                    <div class="preloader-wrapper big active">
-                        <div class="spinner-layer spinner-blue-only">
-                            <div class="circle-clipper left">
-                                <div class="circle"></div>
-                            </div>
-                            <div class="gap-patch">
-                                <div class="circle"></div>
-                            </div>
-                            <div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="loading"></div>
                 <?php echo $content; ?>
             </div>
             <div class="fixed-action-btn horizontal" style="bottom: 10px; right: 10px;">
