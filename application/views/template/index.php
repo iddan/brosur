@@ -15,11 +15,11 @@
         <style type="text/css">
             #loading {
                 position: fixed;
-                left: 40%;
-                top: 40%;
+                left: 0px;
+                top: 23%;
                 width: 100%;
                 height: 100%;
-                background: no-repeat;
+                z-index: 9999;
             }
         </style>
     </head>
@@ -28,16 +28,18 @@
         <main>
             <div class="container">
                 <div id="loading">
-                    <div class="preloader-wrapper big active">
-                        <div class="spinner-layer spinner-blue-only">
-                            <div class="circle-clipper left">
-                                <div class="circle"></div>
-                            </div>
-                            <div class="gap-patch">
-                                <div class="circle"></div>
-                            </div>
-                            <div class="circle-clipper right">
-                                <div class="circle"></div>
+                    <div class="center">
+                        <div class="preloader-wrapper active">
+                            <div class="spinner-layer spinner-red-only">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

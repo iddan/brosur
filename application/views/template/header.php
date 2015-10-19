@@ -64,13 +64,13 @@
                         <li><a href="<?php echo base_url('main/logout'); ?>" class="waves-effect waves-light">Logout</a></li>
                     </ul>
             	<?php } ?>
-        	</div>
+            </div>
         </div>
     </nav>
 </div>
 <div class="container">
     <div class="row">
-        <div class="col s12"><p class="flow-text"><a href="">CV. Gemilang Jaya Elektronik</a><br><?php echo $title; ?></p></div>        
+        <div class="col s12"><p class="flow-text"><a href="">CV. Gemilang Jaya Elektronik</a><br><?php echo $title; ?></p></div>
     </div>
 </div>
 </header>

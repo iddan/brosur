@@ -46,9 +46,9 @@ Log ...
 			- form add OK!
 			- form edit OK!
 	}
+	- benerin loader DONE !!!
 
-In Proses ...
-	- benerin loader
+In Proses ...	
 	- buatkan module pengaturan akun
 	- tambahkan panel info di footer
 
