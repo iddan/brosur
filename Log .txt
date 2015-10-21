@@ -46,7 +46,7 @@ Log ...
 			- form add OK!
 			- form edit OK!
 	}
-	- benerin loader DONE !!!
+	- benerin all loader DONE !!!
 
 In Proses ...	
 	- buatkan module pengaturan akun

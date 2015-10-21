@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="eBrosur - CV. Gemilang Jaya Elektronik">
         <link href="<?php echo base_url(); ?>assets/images/logo.png" rel="shortcut icon">
-        <title>Login eBrosur</title>        
+        <title>eBrosur | Login</title>        
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize css-->
@@ -14,21 +14,37 @@
             #loading {
                 position: fixed;
                 left: 0px;
-                top: 0px;
+                top: 0%;
                 width: 100%;
                 height: 100%;
                 z-index: 9999;
-                background: url('<?php echo base_url(); ?>assets/images/loading.gif') 50% 50% no-repeat #fff;
+                background: #fff;
             }
         </style>
     </head>
     <body>
     <main>
-        <div id="loading"></div>
         <div class="container">
         	<div class="center-align"><img src="<?php echo base_url(); ?>assets/images/logo.png" width="40"></div>
-        	<h5 class="center-align">Welcome to <a href="<?php echo base_url(); ?>">e-Brosur</a></h5>
-        	<h5 class="center-align">CV. Gemilang Jaya Elektronik</h5>            
+        	<h5 class="center-align">Welcome to <a href="<?php echo base_url(); ?>">eBrosur</a></h5>
+        	<h5 class="center-align">CV. Gemilang Jaya Elektronik</h5>
+            <div id="loading">
+                <div class="center">
+                    <div class="preloader-wrapper active">
+                        <div class="spinner-layer spinner-red-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <?php echo $this->session->flashdata('message'); ?>
             <?php echo validation_errors(); ?>
     		<div class="card-panel">
