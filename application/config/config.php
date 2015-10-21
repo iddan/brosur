@@ -16,7 +16,7 @@
 | environments.
 |
 */
-// $config['base_url'] = 'http://192.168.1.204/brosur/';
+// $config['base_url'] = 'http://192.168.1.100/brosur/';
 $config['base_url'] = 'http://localhost/brosur/';
 
 /*

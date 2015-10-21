@@ -47,10 +47,11 @@ Log ...
 			- form edit OK!
 	}
 	- benerin all loader DONE !!!
+	- buatkan module pengaturan akun DONE !!!
+	- view images di module main di buat link dengan gambar saja tidak dengan materialze-box/ slider ..
 
-In Proses ...	
-	- buatkan module pengaturan akun
-	- tambahkan panel info di footer
+In Proses ...
+	- tambahkan panel info di footer (additional if nothing other job)
 
 	* SESUDAH NGODING USAHAKAN LANGSUNG PUSH KE GIT-REPOSITORY(UPLOAD KE GITHUB)
 	$ git status

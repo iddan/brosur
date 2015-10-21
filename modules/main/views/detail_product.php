@@ -5,6 +5,24 @@
 <?php
     foreach($data->result_array() AS $detail) {
 ?>
+        <div class="row">
+            <?php
+                $image_filename = $detail['image_filename'];
+                if(!$image_filename) {
+                    echo '<img class="responsive-img" src="'.base_url().'assets/images/no-image.jpg">';
+                } else {
+                    $split = explode("|", $image_filename);
+                    for($i=0; $i<count($split); $i++) {
+                        echo '<div class="col s6">
+                            <a href="'.base_url().'assets/images/products/'.$split[$i].'"><img class="responsive-img" src="'.base_url().'assets/images/products/'.$split[$i].'"></a>
+                        </div>';
+                    }
+                }
+            ?>
+        </div>
+        <p class="flow-text">* Click images for details</p>
+        <?php echo $detail['description']; ?>
+
         <!-- <div class="slider">
             <ul class="slides">
             <?php
@@ -24,22 +42,6 @@
             ?>
             </ul>
         </div> -->
-        <div class="row">
-            <?php
-                $image_filename = $detail['image_filename'];
-                if(!$image_filename) {
-                    echo '<img class="responsive-img" src="'.base_url().'assets/images/no-image.jpg">';
-                } else {
-                    $split = explode("|", $image_filename);
-                    for($i=0; $i<count($split); $i++) {
-                        echo '<div class="col s6">
-                            <img class="responsive-img materialboxed" data-caption="'.$split[$i].'" src="'.base_url().'assets/images/products/'.$split[$i].'">
-                        </div>';
-                    }
-                }
-            ?>
-        </div>
-        <?php echo $detail['description']; ?>
 <?php 
     }
 ?>
