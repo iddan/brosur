@@ -51,14 +51,16 @@ Log ...
 	- view images di module main di buat link dengan gambar saja tidak dengan materialze-box/ slider ..
 
 In Proses ...
-	- tambahkan panel info di footer (additional if nothing other job)
+	- tambahkan panel info di footer (additional if nothing other job) .
 
 	* SESUDAH NGODING USAHAKAN LANGSUNG PUSH KE GIT-REPOSITORY(UPLOAD KE GITHUB)
 	$ git status
-	$ git add *
+	$ git add .
 	$ git commit -m "penamaan commit" 
 	$ git push
 	$ git status
+
+LAST git push : 20151027
 
 TESTING ..
 	- 
